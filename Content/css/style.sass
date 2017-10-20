@@ -1,0 +1,210 @@
+body
+  font-size: .12rem
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 100%
+  display: flex
+  flex-direction: column
+  background-color: #EDEDED
+
+.header
+  height: .5rem
+  position: relative
+  h1
+    text-align: center
+    height: .44rem
+    a
+      display: inline-block
+      height: .44rem
+      font-size: .16rem
+      line-height: .44rem
+      color: #9D9D9D
+      border-bottom: 2px solid #EDEDED
+      box-sizing: border-box
+    a.on
+      border-bottom: 2px solid #474747
+      color: #474747
+  .search
+    position: absolute
+    right: .15rem
+    top: .14rem
+    i
+      vertical-align: sub
+      font-size: .2rem
+
+.footer
+  height: .5rem
+  background-color: #fff
+  ul
+    display: flex
+    li
+      flex-grow: 1
+      text-align: center
+    .top
+      line-height: .3rem
+      i
+        font-size: .24rem
+
+.content
+  flex: 1
+  overflow-y: scroll
+  .banner
+    height: 1.3rem
+    .swiper-wrapper
+      width: 100%
+      .swiper-slide
+        width: 100%
+        img
+          width: 100%
+    .swiper-pagination-bullet
+      width: 20px
+      border-radius: 4px
+      background-color: #fff
+  .list
+    height: 1.08rem
+    background-color: #fff
+    margin-bottom: 0
+    ul
+      li
+        text-align: center
+        .top
+          width: .44rem
+          height: .44rem
+          line-height: .44rem
+          text-align: center
+          border-radius: .16rem
+          background-color: #FF6565
+          margin: .15rem auto .1rem
+          i
+            font-size: .24rem
+            color: #fff
+            vertical-align: sub
+  .logo
+    height: .75rem
+    background-color: #ECF1F4
+    padding-top: .1rem
+    img
+      width: 100%
+  .detail
+    margin-bottom: .1rem
+    background-color: #fff
+    >h2
+      line-height: .5rem
+      font-weight: normal
+      font-size: .14rem
+      padding-left: .15rem
+      position: relative
+      span
+        position: absolute
+        right: .1rem
+        color: #555
+        em
+          display: inline-block
+          width: .2rem
+          height: .2rem
+          line-height: .2rem
+          background-color: #555
+          color: #fff
+          margin-top: .1rem
+          margin-right: .05rem
+          margin-left: .05rem
+    ul
+      li
+        text-align: center
+        border-top: 1px solid #eee
+        border-right: 1px solid #eee
+        &:last-child
+          border-right: none
+        .top
+          width: .44rem
+          height: .44rem
+          line-height: .44rem
+          text-align: center
+          border-radius: .16rem
+          margin: 0 auto
+          i
+            font-size: .24rem
+            vertical-align: sub
+    .scroll
+      width: 100%
+      overflow: hidden
+      height: 1.3rem
+      padding-bottom: .1rem
+      .lists
+        width: 3000px
+        height: 1.3rem
+        >dl
+          float: left
+          width: 1.3rem
+          height: 1.3rem
+          border: 1px solid #eee
+          margin-left: .15rem
+          dt
+            height: .86rem
+            padding: .18rem .15rem .1rem .17rem
+            text-align: center
+            img
+              height: 100%
+          dd
+            text-align: left
+            padding-left: .1rem
+            h2
+              font-size: .14rem
+            p
+              color: #FC7E40
+              span
+                color: #9D9D9D
+                padding-left: .05rem
+                text-decoration: line-through
+    .active
+      display: flex
+      border-top: 1px solid #eee
+      dl
+        flex-grow: 1
+        width: 33.3%
+        &:nth-child(2)
+          border-right: 1px solid #eee
+          border-left: 1px solid #eee
+        dd
+          padding-left: .15rem
+          h2
+            padding-top: .11rem
+            font-size: .14rem
+          p
+            line-height: .27rem
+            color: #FC7E40
+        dt
+          padding-left: .12rem
+          padding-right: .15rem
+          img
+            width: 100%
+    .carList
+      display: flex
+      flex-wrap: wrap
+      dl
+        flex-grow: 1
+        width: 50%
+        dt
+          padding: .2rem
+          img
+            width: 100%
+        dd
+          padding-left: .15rem
+          padding-right: .15rem
+          h2
+            font-weight: normal
+            font-size: .14rem
+            line-height: .5rem
+          h3
+            font-size: .12rem
+            font-weight: normal
+          p
+            line-height: .65rem
+            span
+              color: #FC7E40
+            s
+              padding-left: .1rem
+    .load
+      text-align: center
+      line-height: .3rem
